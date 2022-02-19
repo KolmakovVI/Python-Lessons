@@ -3,7 +3,7 @@ import time
 import googletrans
 
 translator = googletrans.Translator()
-numb_line = 0
+numb_line = 0 # another little 
 
 inp_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\en-InHyuk Lee-Intermediate-0-1-edit.vtt"
 out_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\Этот файл переделать!!!.txt"
