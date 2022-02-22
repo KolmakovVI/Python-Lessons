@@ -25,10 +25,10 @@ with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create
 
             else:  # if line don't have word or bracket
                 for line in lines_to_trans:
-                    time.sleep(0.3)  # set sleep time for request limit of goog translator
+                    #time.sleep(0.3)  # set sleep time for request limit of goog translator
                     new_line = translator.translate(line, src='english',
                                                     dest='russian')  # create a new line with the translated text
-                    ouf.write(line + '\n')  # write original english line to new file
+                    ouf.write(new_line.text + '\n')  # write original english line to new file
                 new_line = []  # set empty list for searching next fragments subtitles
                 '''
                 output:
@@ -38,5 +38,5 @@ with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create
                 text
                 текст
                 '''
-                ouf.write(numb_line)  # just write this line to new file
+                ouf.write(inf_all[numb_line])  # just write this line to new file
             numb_line += 1  # increase number of line
