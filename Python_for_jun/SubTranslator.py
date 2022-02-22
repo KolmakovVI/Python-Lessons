@@ -9,12 +9,12 @@ numb_line = 0  # set number of line in file
 inp_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\en-InHyuk Lee-Intermediate-0-1-edit.vtt"
 # set a PATh to output file
 out_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\Этот файл переделать!!!.txt"
-with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create a cotstruction for open files
+with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create a construction for open files
     inf_all = inf.readlines()  # set all lines to list
-    for line in inf_all:  # нужно найти способ, чтобы можно было прыгнуть сразу через одну строку в цикле, если я уже две строки соединил и перевел.
+    for line in len(inf_all):  # нужно найти способ, чтобы можно было прыгнуть сразу через одну строку в цикле, если я уже две строки соединил и перевел.
         print(str(numb_line))
-        if numb_line < 2:
-            ouf.write(line)
+        if numb_line < 2: # skip two first lines for translator
+            ouf.write(line) # just write two first lines to new file
             numb_line += 1
         else:
             # if first element of line is word OR bracket -- we must translate this line
