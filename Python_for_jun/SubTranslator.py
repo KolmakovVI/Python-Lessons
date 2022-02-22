@@ -29,7 +29,7 @@ with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create
                     new_line = translator.translate(line, src='english',
                                                     dest='russian')  # create a new line with the translated text
                     ouf.write(new_line.text + '\n')  # write original english line to new file
-                new_line = []  # set empty list for searching next fragments subtitles
+                lines_to_trans = []  # set empty list for searching next fragments subtitles
                 '''
                 output:
                 ---------------------
