@@ -17,7 +17,8 @@
 #     print(a % b)
 # elif c == "div":
 #     print(a // b)
-
-l = r'X-TIMESTAMP-MAP=MPEGTS:180000,LOCAL:00:00:00.000'
-d = r'X-TIMESTAMP'
-print(l == d)
+lines_to_trans = ["What are some contributing factors\n", "say hello\n"]
+#full_string = " ".join(lines_to_trans).replace('\n', '')
+full_string = " ".join(lines_to_trans)
+print(type(full_string))
+print(full_string)
