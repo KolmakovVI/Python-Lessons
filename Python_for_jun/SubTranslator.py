@@ -4,7 +4,7 @@ import googletrans  # import for translation
 
 translator = googletrans.Translator()  # set VAR for func
 numb_line = 0  # set number of line in file
-
+lines_to_trans = [] # create a list for accumulating lines to translate
 # set a path for input file with subtitles
 inp_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\en-InHyuk Lee-Intermediate-0-1-edit.vtt"
 # set a PATh to output file
@@ -19,6 +19,7 @@ with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create
         else:
             # if first element of line is word OR bracket -- we must translate this line
             if numb_line[0].isalpha() or numb_line[0] == '(':
+                lines_to_trans =
                 time.sleep(0.3)  # set sleep time for request limit of goog translator
                 new_line = translator.translate(numb_line, src='english',
                                                 dest='russian')  # create a new line with the translated text
