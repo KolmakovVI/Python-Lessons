@@ -21,11 +21,12 @@ with open(inp_file_path, 'r') as inf, open(out_file_path, 'w') as ouf:  # create
             # if first element of line is word OR bracket -- we must translate this line
             if inf_all[numb_line][0].isalpha() or inf_all[numb_line][0] == '(':
                 lines_to_trans.append(inf_all[numb_line])  # append new line to list for translator
-                ouf.write(inf_all[numb_line] + '\n')  # just write this line to new file
+                #ouf.write(inf_all[numb_line] + '\n')  # just write this line to new file
+                ouf.write(inf_all[numb_line])  # just write this line to new file
 
             else:  # if line don't have word or bracket
                 for line in lines_to_trans:
-                    #time.sleep(0.3)  # set sleep time for request limit of goog translator
+                    time.sleep(0.2)  # set sleep time for request limit of goog translator
                     new_line = translator.translate(line, src='english',
                                                     dest='russian')  # create a new line with the translated text
                     ouf.write(new_line.text + '\n')  # write original english line to new file
