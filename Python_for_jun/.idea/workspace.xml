@@ -43,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.SubTranslator">
     <configuration name="1_Operators_Vatiables_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_for_jun" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.SubTranslator" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.2_Cicles_String_" />
         <item itemvalue="Python.1_Operators_Vatiables_" />
         <item itemvalue="Python.economic" />
