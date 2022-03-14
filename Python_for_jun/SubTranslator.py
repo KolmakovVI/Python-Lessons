@@ -6,14 +6,14 @@ translator = googletrans.Translator()  # set VAR for func
 numb_line = 0  # set number of line in file
 lines_to_trans = []  # create a list for accumulating lines to translate
 # set a path for input file with subtitles
-inp_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\en-InHyuk Lee-Intermediate-0-1-edit.vtt"
+inp_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\1 Preparing to Draw\subtitles\testoutlim.vtt"
 # set a PATh to output file
-out_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\0 Hello, I'm InHyuk Lee\subtitles\RU-InHyuk Lee-Intermediate-0-1-edit.vtt"
+out_file_path = r"C:\Users\kolma\Desktop\Courses\Иллюстрация\InHyuk Lee Illustration\1 Preparing to Draw\subtitles\testoutlim1.vtt"
 with open(inp_file_path, 'r') as inf, open(out_file_path, 'w',
                                            encoding="utf-8") as ouf:  # create a construction for open files
     inf_all = inf.readlines()  # set all lines to list
     # execute cycle while the number of line don't equal last number of line on input file
-    while numb_line <= len(inf_all):
+    while numb_line <= len(inf_all): # надо убрать из тест-файла последние пустые строки и посмотреть, как будет
 
         print(str(numb_line))
 
@@ -21,7 +21,7 @@ with open(inp_file_path, 'r') as inf, open(out_file_path, 'w',
             ouf.write(inf_all[numb_line])  # just write two first lines to new file
             numb_line += 1  # increase number of line
 
-        elif numb_line <= len(inf_all):
+        elif numb_line <= len(inf_all): # тут такое же условие как и у цикла while!!!!!!!!!!!
 
             if inf_all[numb_line][0].isalpha() or inf_all[numb_line][0] == '(':
                 lines_to_trans.append(inf_all[numb_line])  # append new line to list for translator
