@@ -210,12 +210,10 @@
 # div — целочисленное деление.
 # Если выполняется деление и второе число равно 0, необходимо выводить строку "Деление на 0!".
 
-a = int(input())
-b = int(input())
-oper = input()
-dict_oper = {1: lambda a, b: a * b}
-
-
+# a = int(input())
+# b = int(input())
+# oper = input()
+# dict_oper = {1: lambda a, b: a * b}
 
 
 # my decision:

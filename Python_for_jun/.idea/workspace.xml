@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cdbdd0a-8155-4bc5-bbac-2a230cc199ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test_py_lessons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_Operators_Vatiables_.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Operators_Vatiables_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_for_subtrans.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     <property name="last_opened_file_path" value="C:/pyproj/innsearch" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SubTranslator">
+  <component name="RunManager" selected="Python.Test_py_lessons">
     <configuration name="1_Operators_Vatiables_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_for_jun" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="economic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test_py_lessons" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_for_jun" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +121,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/economic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_py_lessons.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +142,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="D:\Py_Stepik_beggin\Python_for_jun\test_for_subtrans.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test_py_lessons" />
         <item itemvalue="Python.SubTranslator" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.2_Cicles_String_" />
         <item itemvalue="Python.1_Operators_Vatiables_" />
-        <item itemvalue="Python.economic" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +188,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Test_py_lessons.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
