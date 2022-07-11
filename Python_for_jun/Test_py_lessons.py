@@ -1,6 +1,6 @@
-inp = input().lower()
+students = ['Ivan', 'Masha', 'Sasha']
+students += ['Olga']
+students += 'Olga'
+print(students)
 
-if inp == inp[::-1]:
-    print('yes')
-else:
-    print('no')
+
